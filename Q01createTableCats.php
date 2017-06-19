@@ -17,6 +17,5 @@ $query = "CREATE TABLE cats (
 $result = $conn->query($query);
 if (!$result) die ("Database access failed: " . $conn->error);
 
-$result->close();
 $conn->close();
 ?>
